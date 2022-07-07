@@ -82,7 +82,7 @@ async def main():
                 try:
                     # get label input
                     label = choose_label() 
-
+                    #label = 'geral'
                     # verify label dir
                     path = DIR_PATH + label
                     if not os.path.exists(path): os.makedirs(path)
@@ -99,7 +99,7 @@ async def main():
                     close_windows()
 
             close_windows()
-            print('\n' + str(len(faces)) + ' faces were found on ' + cam['name'] + ' - ' + cam['location'] + ' and ' + str(labeled_amount) + ' faces were labeled in this session')
+            print('\n' + str(len(faces)) + ' faces were found on ' + cam['name'] + ' - ' + cam['location'] + ' and ' + str(labeled_amount) + ' faces were labeled in this sessao')
 
         print('\nSleeping for ' + str(SLEEPING_TIME) + ' seconds...\n')
 

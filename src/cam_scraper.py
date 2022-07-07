@@ -32,7 +32,9 @@ class CamScraper():
 
         cams = []
         for cam in self.scraped:
-            if 'mosaico' not in cam['slug']:
+            #if not any(item in ['mosaico'] for item in cam['slug']):
+            if cam['media']['headline'] not in ['Mosaico BBB','Confessionário']:
+                print(cam['name']+' - ' + cam[ 'slug'] + ': ' + cam['media']['headline'])
                 cams.append(
                     {'name': cam['name'], 'location': cam['media']['headline'], 'snapshot_link': cam['media']['liveThumbnail'], 
                     'slug': cam['slug'], 'media_id': cam['mediaId'],
