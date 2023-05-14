@@ -1,5 +1,5 @@
 fastapi==0.74.1
-joblib==1.1.0
+joblib==1.1.1
 keras_facenet==0.3.2
 mtcnn==0.1.1
 numpy==1.21.5
