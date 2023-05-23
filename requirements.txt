@@ -5,7 +5,7 @@ mtcnn==0.1.1
 numpy==1.21.5
 opencv_python==4.5.5.62
 pyppeteer==1.0.2
-requests==2.27.1
+requests==2.31.0
 scikit_learn==1.0.2
 starlette==0.17.1
 tqdm==4.62.3
